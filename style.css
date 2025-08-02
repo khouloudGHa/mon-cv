@@ -14,7 +14,7 @@ body{
 }
 .container{
   position:relative;
-  width:100%; /*100%=100wh(vw:viewport width) depend de la largeur du mon ecran=767px*/
+  width:100%; 
   max-width: 1000px;
   min-height: 1000px;
   background: #fff;
@@ -29,11 +29,7 @@ body{
 .container .left-side{
   position: relative;
   background:#003147;
-  padding: 40px;/*Sans padding ni contenu : hauteur = 0 → pas visible
-
-Avec padding : hauteur ≥ padding → visible avec fond
-
-*/
+  padding: 40px;
 }
 .profileText{
   position: relative;
@@ -66,24 +62,12 @@ Avec padding : hauteur ≥ padding → visible avec fond
 
 .profileText h2{
   color:#fff;
-  font-size: 1.5em;/*em est une unité relative.
-
-1em = taille de la police de l’élément parent.
-
-1.5em = 150% de la taille du parent.
-Si l’élément parent a une font-size de 16px, alors :
-
-css
-Copier le code
-font-size: 1.5em; → 1.5 × 16px = 24px
-le font-size=16px par defaut*/
-text-align: center;
-font-weight: 600;
-text-transform: uppercase;
-margin-top: 20px;
-line-height: 1.4em;/*line-height contrôle l'espacement vertical entre les lignes de texte dans un paragraphe.
-*/
-
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 20px;
+  line-height: 1.4em;
 }
 
 .contactInfo{
@@ -96,12 +80,6 @@ line-height: 1.4em;/*line-height contrôle l'espacement vertical entre les ligne
   letter-spacing: 1px;
   margin-bottom: 30px;
 }
-/*  Pour augmenter l’espace entre les éléments en CSS, on utilise principalement margin et padding
-Margin (marge extérieure)
-C’est l’espace autour d’un élément, entre cet élément et les autres.
- Padding (rembourrage intérieur)
-C’est l’espace à l’intérieur de l’élément, entre son contenu (texte, image…) et sa bordure.
-*/
 
 .contactInfo ul{
   position: relative;
@@ -159,11 +137,7 @@ font-weight:300;
    .container .right-side{
      position: relative;
      background:#fff;
-     padding: 40px;/*Sans padding ni contenu : hauteur = 0 → pas visible
-
-Avec padding : hauteur ≥ padding → visible avec fond
-
-*/
+     padding: 40px;
 }
 
 .about{
@@ -248,3 +222,4 @@ p{
   color: blue;
 
 }
+
