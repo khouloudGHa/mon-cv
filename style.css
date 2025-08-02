@@ -10,7 +10,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height:100vh /*100vh:( vh:viewport height) depend de l'hauteur du mon ecran=695px*/
+  min-height:100vh;
 }
 .container{
   position:relative;
@@ -246,4 +246,5 @@ p{
 
 .skill ul li::marker{
   color: blue;
+
 }
