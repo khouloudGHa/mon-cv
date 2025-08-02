@@ -1,0 +1,249 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background:lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height:100vh /*100vh:( vh:viewport height) depend de l'hauteur du mon ecran=695px*/
+}
+.container{
+  position:relative;
+  width:100%; /*100%=100wh(vw:viewport width) depend de la largeur du mon ecran=767px*/
+  max-width: 1000px;
+  min-height: 1000px;
+  background: #fff;
+  margin: 50px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+
+
+
+.container .left-side{
+  position: relative;
+  background:#003147;
+  padding: 40px;/*Sans padding ni contenu : hauteur = 0 → pas visible
+
+Avec padding : hauteur ≥ padding → visible avec fond
+
+*/
+}
+.profileText{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.profileText .imgBx
+{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+
+
+.profileText .imgBx img{
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+}
+
+.profileText h2{
+  color:#fff;
+  font-size: 1.5em;/*em est une unité relative.
+
+1em = taille de la police de l’élément parent.
+
+1.5em = 150% de la taille du parent.
+Si l’élément parent a une font-size de 16px, alors :
+
+css
+Copier le code
+font-size: 1.5em; → 1.5 × 16px = 24px
+le font-size=16px par defaut*/
+text-align: center;
+font-weight: 600;
+text-transform: uppercase;
+margin-top: 20px;
+line-height: 1.4em;/*line-height contrôle l'espacement vertical entre les lignes de texte dans un paragraphe.
+*/
+
+}
+
+.contactInfo{
+  padding-top: 80px;
+}
+.title{
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+/*  Pour augmenter l’espace entre les éléments en CSS, on utilise principalement margin et padding
+Margin (marge extérieure)
+C’est l’espace autour d’un élément, entre cet élément et les autres.
+ Padding (rembourrage intérieur)
+C’est l’espace à l’intérieur de l’élément, entre son contenu (texte, image…) et sa bordure.
+*/
+
+.contactInfo ul{
+  position: relative;
+}
+.contactInfo ul li{
+  position: relative;
+  list-style: none;
+  margin: 10px 0;
+  cursor: pointer;
+}
+.contactInfo ul li .icon{
+  display: inline-block;
+  width:30px;
+  font-size: 18px;
+  color:#03a9f4;
+
+}
+.contactInfo ul li span{
+color:#fff;
+font-weight:300;
+}
+
+.contactInfo ul li .text{
+ font-size: 13px;
+}
+
+.contactInfo.education h5{
+  color:#03a9f4;
+  font-weight: 500;
+}
+.contactInfo.education ul li h4:nth-child(1){
+  color:#fff;
+  font-weight: 500;
+}
+.contactInfo.education h4{
+  color:#fff;
+  font-weight: 300;}
+
+  .contactInfo.language .percent{
+   position: relative;
+   width:100%;
+   height: 6px;
+   display:inline-block ;
+   background-color:#081921;
+  }
+   .contactInfo.language .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color:#03a9f4;
+   }
+/*------------------------------------------------------------------------------------------------------------------------*/
+
+   .container .right-side{
+     position: relative;
+     background:#fff;
+     padding: 40px;/*Sans padding ni contenu : hauteur = 0 → pas visible
+
+Avec padding : hauteur ≥ padding → visible avec fond
+
+*/
+}
+
+.about{
+  margin-bottom: 80px;
+  margin-top: 30px;
+}
+.about:last-child{
+  margin-bottom: 0;
+}
+.title2{
+  color:#003147;
+  text-transform:uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+p{
+  color: #333;
+   line-height: 1.6; 
+   text-align: justify;
+}
+
+.about .box{
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+
+.about .box .year-company{
+  min-width:150px;
+}
+
+.about .box .year-company h5{
+  text-transform:uppercase;
+  color: #848c90;
+  font-weight: 600;}
+
+  .about .box .text h4{
+    text-transform: uppercase;
+    color:#2a7da2;
+    font-size: 16px;
+
+  }
+
+ .skills{
+  margin-top: 80px;
+ }
+ .skills .box {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  justify-content: center;
+  align-items: center;
+ }
+
+.skills .box h4{
+  text-transform: uppercase;
+  color:#848c99;
+  font-weight: 500;
+}
+.skills .box  .percent{
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background: #f0f0f0;
+}
+.skills .box  .percent div{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #03a9f4;
+}
+
+.skill ul li {
+  list-style-type: circle;
+   margin: 10px;
+   font-size: 16px;
+}
+
+.skill ul li::marker{
+  color: blue;
+}
